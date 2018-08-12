@@ -12,13 +12,13 @@ if ($h["message"]["text"] === "/start") {
 }
 
 
-$ch = curl_init("https://api.telegram.org/bot631015066:AAG0bRA-xKIxxqb4qwMnk-O4rPVPFCpIV24/sendMessage");
+$ch = curl_init("https://api.telegram.org/bot631015066:AAG0bRA-xKIxxqb4qwMnk-O4rPVPFCpIV24/sendDocument");
 curl_setopt_array($ch, [
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_POST => true,
 	CURLOPT_POSTFIELDS => http_build_query([
 		"chat_id" => $h["message"]["from"]["id"],
-		"text" => $reply
+		"document" => "https://telegram.neon.web.id/a.txt"
 	]),
 	CURLOPT_SSL_VERIFYPEER => false,
 	CURLOPT_SSL_VERIFYHOST => false
