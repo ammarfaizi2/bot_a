@@ -1,0 +1,1 @@
+{"ok":true,"result":{"message_id":13,"from":{"id":631015066,"is_bot":true,"first_name":"neonbot","username":"neon53_bot"},"chat":{"id":46014944,"first_name":"wakhid:403","username":"wichaksono","type":"private"},"date":1534052446,"text":"https://telegram.neon.web.id/a.txt","entities":[{"offset":0,"length":34,"type":"url"}]}}
