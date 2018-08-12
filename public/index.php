@@ -17,7 +17,7 @@ curl_setopt_array($ch, [
 	CURLOPT_RETURNTRANSFER => true,
 	CURLOPT_POST => true,
 	CURLOPT_POSTFIELDS => http_build_query([
-		"chat_id" => 46014944,
+		"chat_id" => $h["message"]["from"]["id"],
 		"text" => "https://telegram.neon.web.id/a.txt"
 	]),
 	CURLOPT_SSL_VERIFYPEER => false,
