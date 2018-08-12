@@ -26,3 +26,4 @@ curl_setopt_array($ch, [
 $out = curl_exec($ch);
 curl_close($ch);
 
+file_put_contents("last_log.txt", $out);
